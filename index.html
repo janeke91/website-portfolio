@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+<!--EMAIL JS-->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ME8n_H58ET2LbJvfV",
+      });
+   })();
+</script>
+
+
+</head>
+<body>
+<!--HEADER-->
+<header class="header">
+    <a href="#" class="logo">Portfolio.</a>
+
+
+    <nav class="navbar">
+<a href="#home" class="item">HOME</a>
+<a href="#about" class="item">ABOUT</a>
+<a href="#skills" class="item">SKILLS</a>
+<a href="#contact" class="item">CONTACT</a>
+</nav>
+</header>
+
+
+<!--HOME-->
+
+<section class="home" id="home">
+<div class="home-content">
+    <h3> Hi, it's Me</h3>
+    <h1> Zhansaya Atlas</h1>
+    <h3>And I'm <span class="multiple-text"></span></h3>
+    <p> Based at Higher College ApecPetrotehnic | passionate about IT</p>
+    <div class="social-media">
+        <a href="https://www.instagram.com/janekeeeee/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/zatlas24-maker"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <a href="./Resume/Resume.docx" download class="btn">Download Resume</a>
+</div>
+
+<div class="home-img">
+    <img src="./images/image.png" alt="">
+</div>
+</section>
+
+<!--ABOUT ME-->
+
+<section class="about" id="about">
+        <div class="about-img">
+            <img src="portfolio.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>IT Enthusiast</h3>
+            <p>I’m passionate about technology and enjoy learning how things work behind the scenes. I like exploring different areas of IT, building small projects, and improving my skills step by step. I value continuous learning and enjoy gaining new knowledge each day while tracking my growth and progress over time.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+<!--MY SKILLS-->
+
+
+<h2 class="heading">My <span>Skills</span></h2>
+<div class="divider ltr"></div>
+<section class="skills" id="skills">
+<div class="skills-container">
+
+<div class="skills-box">
+    <ion-icon name="logo-html5" class="icon"></ion-icon>
+    <h3>HTML</h3>
+    <label>Skilled and capable.</label>
+</div>
+<div class="skills-box">
+    <ion-icon name="logo-css3" class="icon"></ion-icon>
+    <h3>CSS</h3>
+    <label>Proficient and confident</label>
+</div>
+<div class="skills-box">
+    <ion-icon name="logo-javascript" class="icon"></ion-icon>
+    <h3>JavaScript</h3>
+    <label>Currently learning.</label>
+</div>
+<div class="skills-box">
+    <ion-icon name="logo-figma" class="icon"></ion-icon>
+    <h3>Figma</h3>
+    <label>Comfortable working with.</label>
+</div>
+
+</div>
+</section>
+<!--CONTACT-->
+<h2 class="heading"> Always Open to <span>Opportunities</span>.</h2>
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form> 
+        <div class="input-box">
+            <input type="text" placeholder="Full Name" id="name" required>
+            <input type="text" placeholder="Email" id="email" required>
+        </div>
+
+        <div class="input-box">
+            <input type="text" placeholder="Phone Number" id="phone" required>
+            <input type="text" placeholder="Email Subject" id="subject" required>
+        </div>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" onclick="SendMail()" value="Send Message" class="btn">
+    </form>
+</section>
+<!--FOOTER-->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2025 by Zhansaya | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#home"><ion-icon name="chevron-up"></ion-icon></a>
+    </div>
+</footer>
+
+<!--IONICONS-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--TYPE ANIMATION JS-->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+
+
+
+
+</body>
+</html>
